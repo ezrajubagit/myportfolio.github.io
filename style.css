@@ -8,27 +8,32 @@
 body {
 
     min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    
 }
 
 
 .container {
 
 
-    width: 100% ;
+   
     font-family: 'Roboto' , sans-serif ;
     min-height:  100vh;
+    border: 1px solid ;
   
 }
 
 .container .hero {
 
-width: 100%;
+width: inherit;
 height:100vh ;
 display: flex;
 justify-content: space-between;
 padding-top: 15vh;
 background:  rgba(229, 226, 226, 0.8);
-
+border: 1px solid  ;
+width:100%;
 
 
 }
@@ -57,6 +62,7 @@ color: #088F8F;
     flex-direction:  column ;
     margin-bottom: 20px ;
     padding: 100px ;
+    
 }
 
 .container .hero .login-section .login {
@@ -67,7 +73,8 @@ color: #088F8F;
     box-shadow: 0 0 5px rgba(22, 22, 22, 0.5);
     border-radius: 5px ;
     background-color: white;
-    width: 400px ;
+    width: 400px;
+   
 }
 
 .container .hero .login-section .login  input, button {
@@ -81,6 +88,7 @@ color: #088F8F;
     border-radius: 5px;
     color:  rgba(122, 122, 122, 0.8);
     font-size: 18px;
+    width: 100% ;
    
 }
 .container .hero .login-section .login button {
@@ -146,15 +154,16 @@ color: #088F8F;
 .container  .lan-sec ul {
 
     display: flex;
+    flex-wrap: wrap ;
+    align-items:  flex-start;
+
 }
 
 .container .lan-sec ul li  {
 
     list-style-type: none;
     padding: 0px 5px ;
-    text-align: left ;
-    
-   
+    text-align: left ;  
 }
 
 .container .lan-sec ul li a {
@@ -208,4 +217,52 @@ color: #088F8F;
     
     font-size: 14px;
     padding-left: 4px ;
+}
+
+@media  (max-width:1000px){
+    
+    .container .hero {
+
+        flex-direction: column ;
+        align-items: center;
+        height: auto ;
+
+
+}
+
+.container .hero .logo-section {
+
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+}
+
+.container .hero .logo-section h1 {
+
+    text-align: center;
+}
+
+.container .hero .logo-section p {
+
+    text-align: center ;
+}
+
+.container .hero .login-section {
+
+    padding: 20px 0 0 ;
+}
+
+
+
+.container .hero .login-section .login  {
+
+   width: 100% ;
+}
+
+.container .hero .login-section .login  input, button  {
+
+    font-size: 1em;
+}
+
+
+
 }
