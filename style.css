@@ -249,19 +249,28 @@ color: #088F8F;
 
 .container .hero .login-section {
 
-    padding: 20px 0 0 ;
+    padding: 10px 10px 10px 10px ;
+    width: 100% ;
 }
 
 
 
 .container .hero .login-section .login  {
 
-   width: 100% ;
+   width: 70%; 
+   margin: auto;
+   max-width: 400px;
 }
 
 .container .hero .login-section .login  input, button  {
 
     font-size: 1em;
+}
+
+.container .hero .login-section .create-page  {
+
+    text-align:  center;
+    
 }
 
 
