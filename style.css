@@ -21,7 +21,7 @@ html , body {
    
     font-family: 'Roboto' , sans-serif ;
     min-height:  100vh;
-    border: 1px solid ;
+   
   
 }
 
@@ -43,7 +43,7 @@ width:100%;
 
     padding: 100px ;
 }
-.container .hero .logo-section h1 {
+.logo-section h1 {
 
 font-family: 'Lobster' , cursive;
 font-weight: 400 ;
@@ -92,13 +92,16 @@ color: #088F8F;
     width: 100% ;
    
 }
-.container .hero .login-section .login button {
+.container .hero .login-section .login .login-button {
 
     background: #088F8F;
     color: white ;
     font-weight: bold;
     text-transform:  capitalize;
     font-size: 20px ;
+    border-radius: 3px;
+    width:100% ;
+    margin: auto ;
 }
 
 
@@ -118,8 +121,14 @@ color: #088F8F;
 
 
     margin: 15px auto;
-    background:  rgb(26, 26, 248);
-    width: 60% ;
+
+    width: auto;
+    text-decoration: none ;
+    display: inline-block;
+    color: white ;
+    padding: 10px 13px ;
+    background: rgb(55, 55, 240);
+    border-radius: 3px;
     
 
 }
@@ -299,3 +308,75 @@ color: #088F8F;
 
 }
 
+
+/* styles for loggedin file */
+
+
+.head-section {
+
+
+    display:flex ;
+    width:100% ;
+    justify-content: space-between;
+    height:10vh ;
+    box-shadow: 0 0 5px rgb(138, 136, 136);
+    align-items: center;
+    padding: 0 10px ;
+   
+}
+
+.main-nav a {
+
+
+    margin: 0 10px ;
+    display:inline-block ;
+ 
+    text-decoration: none;
+    color: #088F8F ;
+    
+
+}
+
+.main-nav a i  {
+
+  font-size:20px;
+}
+
+.user-info {
+
+  
+}
+
+.user-info span , a , i {
+
+    display: inline-block;
+    
+    margin: 0 10px ; 
+    color: #088F8F ;
+}
+
+.main-section {
+
+
+
+    padding: 50px 20px ;
+    background-color: rgba(241, 238, 238, 0.5);
+    height: 90vh;
+
+}
+
+.main-section  p span {
+
+    font-size: 60px;
+    color: #088F8F;
+    
+}
+
+.main-section  p {
+
+    color: rgba(122, 122, 122, 0.8);
+    font-size:  40px;
+}
+
+
+ 
