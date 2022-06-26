@@ -33,7 +33,7 @@ display: flex;
 justify-content: space-between;
 padding-top: 15vh;
 background:  rgba(229, 226, 226, 0.8);
-border: 1px solid  ;
+
 width:100%;
 
 
@@ -276,3 +276,26 @@ color: #088F8F;
 
 
 }
+
+@media(max-width:375px){
+
+
+
+    .container .hero .login-section .login .create-acc {
+
+        font-size: 15px ;
+        padding: 3px 5px ;
+    }
+
+    .container .hero .login-section {
+
+        padding: 20px;
+    }
+
+    .container .hero .login-section .login {
+
+        width: 100%;
+    }
+
+}
+
